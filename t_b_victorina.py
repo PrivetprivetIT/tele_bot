@@ -36,7 +36,7 @@ current_user_question = {}
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    bot.reply_to(message, "Привет! Выбери уровень сложности от 1 до 5.")
+    bot.reply_to(message, "Привет! Это викторина по истории. Выбери уровень сложности от 1 до 5.")
 
 
 @bot.message_handler(func=lambda message: True)
